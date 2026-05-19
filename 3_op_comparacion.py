@@ -11,20 +11,33 @@ print(4 >= 4.0) # T
 print(4 > 4.0)  # F
 print(4 > 3)  # T
 print(4 < 3)  # F
-print(4 != 3)  # T
+print(4 != 3)  # T 
 print(5 != 5.0)  # F
-
 
 #*************⁉️¿Con tipo de dato Bool?
 # Se tratan como 1 (True) y 0 (False).
-
+print('Con tipo de dato Bool')
+print(True == 1) # T
+print(True > 1) # F
+print(True >= 1) # T
+print(False >= 1) # F
 
 
 # *************⁉️💡¿Con tipo de dato String?
 # ✅Se comparan lexicográficamente según el orden Unicode de cada carácter.
 # Python compara cadenas carácter a carácter, cada caracter tiene un codigo numerico. 
+print('\nCon tipo de dato String')
+print('hola' == 'Hola') # F
+print('hola' != 'Hola') # V
+print('num de la "H"', ord('H')) #72
+print('num de la "h"', ord('h')) #104
+print('H' < 'h') # 72 < 104
+print(72 < 104) # 72 < 104
 
-
+print()
+print(72 == 'H') # False
+print(72 == ord('H')) # T
+print(type(ord('H'))) #<class 'int'>
 #* Python compara carácter a carácter:
 # usando el valor numérico Unicode de cada carácter (obtenible con ord(caracter)).
  
@@ -37,7 +50,7 @@ print(5 != 5.0)  # F
 #* ✅Puedes usar los operadores de comparacion "entre dos cadenas".
 #! 🚫No mezcles tipos diferentes, como str con int en comparaciones directas, porque no son compatibles, 
 # si lo intentas usando operadores de orden (<, >, etc.), Python lanzará un TypeError. 
-#! print("3" < 3)   #* TypeError: '<' not supported between instances of 'str' and 'int'
+#!print("3" < 3)   #* TypeError: '<' not supported between instances of 'str' and 'int'
 # Sin embargo, == y != sí pueden comparar distintos tipos siempre, 
 # print("3" == 3)  # False  
 # Lo anterior retorna casi siempre False, (excepto casos especiales).

@@ -207,11 +207,15 @@ print('0**3 = ', 0**3)  # 0
 # álgebra o programación se define convencionalmente como 1 
 print('0**0 = ', 0**0)  # 1
 
-
 #? El exponente negativo indica el inverso multiplicativo de la base elevada al exponente positivo. 
 print('2**-3 = ', 2**-3) # 2 (2/1) ^-3 → 1/(2**3) →  1/8 → 0.125
 
 print('(1/3)**-2 = ', (1/3)**-2) #  3/1 = 3; 3**2 → 3 * 3
+
+#* ejemplo con notacion cientifica
+print('ejemplo con notacion cientifica')
+print(3.5e-3)             #0.0035
+print(3.5 * (1/(10 **3))) #0.0035
 
 #? La base negativa con exponente PAR da como resultado un número positivo
 print('(-2)**2 = ', (-2)**2)  #4
